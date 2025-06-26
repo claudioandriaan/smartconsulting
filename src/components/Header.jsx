@@ -113,8 +113,8 @@ export default function Header() {
         }`}
       >
         {/* Dark mode toggle (mobile) */}
-        <div className="flex items-center justify-between mb-6">
-          <span className="text-sm font-medium">Thème</span>
+        <div className="flex items-center justify-start mb-6">
+          {/* <span className="text-sm font-medium">Thème</span>*/}
           <button
             onClick={() => {
               setDarkMode(!darkMode)
