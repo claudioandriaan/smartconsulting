@@ -5,6 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import TestimonialsAndPortfolio from './TestimonialsAndPortfolio';
 import Services from './Services';
 import Hero from './Hero';
+import Technologies from './Technologies';
+import Contact from './Contact';
 
 export default function Home() {
   return (
@@ -92,72 +94,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+        <Technologies />
       <TestimonialsAndPortfolio />
 
       {/* Contact */}
-      <section id="contact" className="bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-24 px-6 md:px-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center" data-aos="fade-up">
-
-          {/* Text */}
-          <div className="text-left">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
-              Travaillons ensemble
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-              Une idée en tête ? Un besoin digital ? Contactez-nous et discutons de votre projet !
-            </p>
-
-            <ul className="text-gray-700 dark:text-gray-300 space-y-4 text-base">
-              <li className="flex items-center gap-3">
-                <i className="fas fa-envelope text-blue-500"></i>
-                <span>support@claudio.dev</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <i className="fas fa-phone text-green-500"></i>
-                <span>+261 34 55 504 44</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <i className="fas fa-map-marker-alt text-red-500"></i>
-                <span>Antsirabe, Madagascar</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Form */}
-          <form className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 space-y-6 border border-gray-100 dark:border-gray-700" data-aos="fade-left">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nom</label>
-                <input type="text" placeholder="Votre nom"
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-white" required />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-                <input type="email" placeholder="Votre email"
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-white" required />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Sujet</label>
-              <input type="text" placeholder="Sujet du message"
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-white" />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
-              <textarea rows="5" placeholder="Expliquez votre besoin..."
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-white" required />
-            </div>
-
-            <button type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300 hover:scale-105">
-              Envoyer le message
-            </button>
-          </form>
-        </div>
-      </section>
+      <Contact />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-6 md:px-20">
