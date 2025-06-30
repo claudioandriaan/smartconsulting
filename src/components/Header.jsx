@@ -55,19 +55,33 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-4">
-          <ul className="flex items-center gap-6">
-            {['Home', 'About', 'Services', 'Portfolio'].map((item) => (
-              <li key={item}>
-                <a
-                  className={`text-lg transition ${
-                    scrolled ? 'text-gray-800 dark:text-white hover:text-blue-600' : 'text-white hover:text-blue-300'
-                  }`}
-                  href={`#${item.toLowerCase()}`}
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
+         <ul className="flex items-center gap-6">
+            {['Accueil', 'À propos', 'Services', 'Portfolio'].map((item) => {
+              let id = item; 
+
+              if (item === 'Accueil') {
+                id = '';
+              } else if (item === 'À propos') {
+                id = 'about';
+              } else {
+                id = item.toLowerCase();
+              }
+
+              return (
+                <li key={item}>
+                  <a
+                    className={`text-lg transition ${
+                      scrolled
+                        ? 'text-gray-800 dark:text-white hover:text-blue-600'
+                        : 'text-white hover:text-blue-300'
+                    }`}
+                    href={`#${id}`}
+                  >
+                    {item}
+                  </a>
+                </li>
+              );
+            })}
             <li>
               <a
                 href="#contact"
@@ -77,10 +91,11 @@ export default function Header() {
                     : 'bg-blue-500 text-white hover:bg-blue-600'
                 }`}
               >
-                Contact
+                Contactez-nous
               </a>
             </li>
           </ul>
+
 
           {/* Dark mode toggle */}
           <button
@@ -141,7 +156,7 @@ export default function Header() {
               onClick={toggleMenu}
               className="inline-block px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
             >
-              Contact
+              Contactez-nous
             </a>
           </li>
         </ul>

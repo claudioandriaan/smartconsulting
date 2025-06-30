@@ -5,6 +5,9 @@ import projet5 from '../assets/projet5.png';
 import projet2 from '../assets/projet_2.png';
 import projet3 from '../assets/projet3.png';
 import projet4 from '../assets/projet4.png';
+import projet7 from '../assets/deepseek.png';
+import projet6 from '../assets/qwen.png';
+import projet8 from '../assets/data.png';
 
 export default function TestimonialsAndPortfolio() {
   const [filter, setFilter] = useState('all');
@@ -17,6 +20,22 @@ export default function TestimonialsAndPortfolio() {
       category: 'dev',
       github: 'https://github.com/claudio/portfolio-client',
       website: 'https://claudio-andriniaina.netlify.app/',
+    },
+    {
+      title: 'Qwen, Agent AI website',
+      description: 'Développement et implementation de l\'API Qwen.',
+      image: projet6,
+      category: 'dev',
+      github: 'https://github.com/claudioandriaan/qwen-ai',
+      website: 'https://qwen-ai-indol.vercel.app/',
+    },
+    {
+      title: 'DeepSeek, Agent AI website',
+      description: 'Développement et implementation de l\'API DeepSeek.',
+      image: projet7,
+      category: 'dev',
+      github: 'https://github.com/claudioandriaan/deepseek-ai',
+      website: 'https://deepseek-ai-gilt.vercel.app/',
     },
     {
       title: 'Site Vitrine pour Agence',
@@ -51,9 +70,9 @@ export default function TestimonialsAndPortfolio() {
     {
       title: 'Extraction Données Produits',
       description: 'Scraping de 10.000 fiches produits pour une refonte SEO.',
-      image: projet4,
+      image: projet8,
       category: 'scraping',
-      github: 'https://github.com/claudio/produits-scraper',
+      github: 'https://github.com/claudioandriaan/Python_web_scraping_test',
     },
     
   ];
