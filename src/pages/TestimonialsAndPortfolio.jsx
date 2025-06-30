@@ -49,8 +49,8 @@ export default function TestimonialsAndPortfolio() {
       title: 'Site de rechercher d\'emploi à Madagascar',
       description: 'Développement d’un site web moderne pour trouver des job.',
       image: projet1,
-      category: 'dev',
-      github: 'https://github.com/claudio/portfolio-client',
+      category: 'dev',     
+      badge: { text: 'Encours', color: 'blue' },
     },
     {
       title: 'Scraping Annonces Légales',
@@ -65,7 +65,7 @@ export default function TestimonialsAndPortfolio() {
       description: 'Site  de résérvation.',
       image: projet2,
       category: 'dev',
-      github: 'https://github.com/claudio/dashboard-kpi',
+      badge: { text: 'Encours', color: 'blue' },
     },
     {
       title: 'Extraction Données Produits',

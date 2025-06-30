@@ -119,9 +119,9 @@ export default function Home() {
           <div>
             <h4 className="text-lg font-semibold mb-2">Suivez-nous</h4>
             <div className="flex justify-center md:justify-start gap-4 mt-2">
-              <a href="#" className="hover:text-blue-400"><i className="fab fa-facebook text-xl"></i></a>
-              <a href="#" className="hover:text-blue-400"><i className="fab fa-linkedin text-xl"></i></a>
-              <a href="#" className="hover:text-blue-400"><i className="fab fa-github text-xl"></i></a>
+              <a href="https://www.facebook.com/claudio.andrinyaina/" className="hover:text-blue-400"><i className="fab fa-facebook text-xl"></i></a>
+              <a href="https://www.linkedin.com/in/claudio-andriniaina-78367b243/" className="hover:text-blue-400"><i className="fab fa-linkedin text-xl"></i></a>
+              <a href="https://github.com/claudioandriaan/" className="hover:text-blue-400"><i className="fab fa-github text-xl"></i></a>
             </div>
           </div>
         </div>

@@ -47,9 +47,9 @@ export default function Header() {
       <div className="flex justify-between items-center md:px-6 py-4 max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <h1 className={`font-extrabold text-3xl ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
+          <a href="#" className={`font-extrabold text-3xl ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
             Claudio
-          </h1>
+          </a>
           <Code size={30} className={`${scrolled ? 'text-blue-600' : 'text-blue-400'}`} />
         </div>
 
